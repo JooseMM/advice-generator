@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+:root {
+  --main-font: hsl(193, 38%, 86%);
+  --bg-outside: hsl(218, 23%, 16%);
+  --main-bg: hsl(217, 19%, 24%);
+  --title-button-color: hsl(150, 100%, 66%);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
 }
