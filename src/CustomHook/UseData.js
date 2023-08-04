@@ -6,7 +6,7 @@ const useData = () => {
     
     const fetchFunction = async () => {
         try {
-          const response = await fetch ("https://api.adviceslip.com/advice");
+          const response = await fetch ("https://api.adviceslip.com/advice", {cache: "no-store"});
           const jsonData = await response.json();
           setData({id: jsonData.slip.id, advice: jsonData.slip.advice})
         }
